@@ -14,15 +14,128 @@
 <script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.js"></script>
 <style>
 :root{--bg:#020919;--bg2:#041126;--bg3:#06152e;--gold:#d7a340;--gold2:#efc46a;--white:#f7f5f0;--muted:#b9c1cf;--line:rgba(215,163,64,.40)}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:Montserrat,Arial,sans-serif;line-height:1.55}a{color:inherit;text-decoration:none}img{display:block;max-width:100%}button,input,select,textarea{font:inherit}.shell{width:min(1395px,calc(100% - 56px));margin:auto}.header{height:86px;position:sticky;top:0;z-index:50;background:rgba(2,9,25,.97);border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}.nav{height:86px;display:grid;grid-template-columns:330px 1fr 220px;align-items:center;gap:24px}.brand img{width:280px;height:64px;object-fit:contain;object-position:left center}.links{display:flex;justify-content:center;align-items:center;gap:48px;font-size:15px}.links a{padding:30px 0 23px;position:relative}.links a.active{color:var(--gold2)}.links a.active:after{content:"";position:absolute;left:0;right:0;bottom:15px;height:2px;background:var(--gold)}.top-cta{justify-self:end;display:inline-flex;align-items:center;gap:9px;border:1px solid var(--gold);color:var(--gold2);padding:11px 17px;border-radius:8px;font-size:14px}.mobile-toggle,.mobile-menu{display:none}.hero{height:368px;background:linear-gradient(90deg,#020919 0%,#041126 53%,#020919 53%,#020919 100%);border-bottom:1px solid var(--line);overflow:hidden}.hero-grid{height:100%;display:grid;grid-template-columns:52% 48%}.hero-copy{display:flex;flex-direction:column;justify-content:center;padding-left:9px;padding-right:70px;position:relative}.hero-copy:after{content:"C";position:absolute;right:-10px;top:10px;font-family:"Cormorant Garamond",serif;font-size:330px;line-height:1;color:rgba(255,255,255,.025);font-weight:700;pointer-events:none}.hero h1{font-family:"Cormorant Garamond",serif;font-size:60px;line-height:.96;letter-spacing:-1px;font-weight:600;margin:0 0 22px;max-width:670px;position:relative;z-index:2}.hero h1 span{display:block;color:var(--gold)}.hero p{position:relative;z-index:2;margin:0 0 24px;color:#d4d9e3;font-size:15px;max-width:600px;line-height:1.55}.hero-actions{display:flex;gap:18px;position:relative;z-index:2}.btn{height:48px;border-radius:7px;padding:0 24px;display:inline-flex;align-items:center;justify-content:center;gap:11px;font-weight:600;font-size:14px}.btn-primary{background:linear-gradient(135deg,var(--gold2),#c98f27);color:#fff;min-width:215px}.btn-outline{border:1px solid var(--gold);color:var(--gold2);min-width:205px}.hero-photo{height:368px;position:relative;background:url('assets/img/hero-bg.jpg') center/cover no-repeat;overflow:hidden}.hero-photo:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#041126 0%,rgba(4,17,38,.35) 18%,rgba(2,9,25,.08) 60%)}.wall-logo{position:absolute;z-index:2;width:330px;right:150px;top:57px;border-radius:4px;mix-blend-mode:screen;opacity:.93}.benefits{height:108px;background:#041126;border-bottom:1px solid var(--line)}.benefit-grid{height:100%;display:grid;grid-template-columns:repeat(4,1fr)}.benefit{display:grid;grid-template-columns:72px 1fr;align-items:center;padding:0 24px;border-right:1px solid rgba(215,163,64,.24)}.benefit:first-child{padding-left:8px}.benefit:last-child{border-right:0}.icon{width:50px;height:50px;display:grid;place-items:center;color:var(--gold)}.icon svg{width:42px;height:42px;stroke-width:1.5}.benefit h3{margin:0 0 5px;font-size:13px;font-weight:600}.benefit p{margin:0;color:var(--muted);font-size:12px;line-height:1.45}.about{height:290px;background:linear-gradient(100deg,#020919,#041126);border-bottom:1px solid var(--line)}.about-grid{height:100%;display:grid;grid-template-columns:44% 56%;gap:52px;align-items:center}.about-copy{padding-left:9px}.label{font-size:11px;color:var(--gold);font-weight:700;letter-spacing:.05em;text-transform:uppercase;margin-bottom:10px}.about h2{font-family:"Cormorant Garamond",serif;font-size:39px;line-height:1.02;font-weight:600;margin:0 0 17px;max-width:470px}.about h2:after{content:"";display:block;width:32px;height:2px;background:var(--gold);margin-top:15px}.about p{max-width:520px;font-size:12px;line-height:1.55;color:#cbd2df;margin:0 0 13px}.about .more{border:1px solid var(--gold);color:var(--gold2);display:inline-flex;align-items:center;gap:14px;padding:8px 15px;border-radius:6px;font-size:12px}.about-visual{height:256px;position:relative;border:1px solid var(--gold);border-radius:12px;overflow:hidden}.about-visual img{width:100%;height:100%;object-fit:cover}.stats{height:91px;background:#031027;border-bottom:1px solid var(--line)}.stats-grid{height:100%;display:grid;grid-template-columns:repeat(4,1fr)}.stat{display:flex;align-items:center;justify-content:center;gap:17px;border-right:1px solid rgba(215,163,64,.25)}.stat:last-child{border-right:0}.stat svg{color:var(--gold);width:36px;height:36px;stroke-width:1.6}.stat strong{display:block;color:var(--gold2);font-family:"Cormorant Garamond",serif;font-size:26px;line-height:1}.stat span{display:block;color:#d7dce5;font-size:11px;margin-top:5px}.section{padding:84px 0;background:var(--bg)}.section.alt{background:#041126}.section-head{text-align:center;max-width:760px;margin:0 auto 42px}.section-head small{color:var(--gold);font-size:11px;letter-spacing:.08em;text-transform:uppercase;font-weight:700}.section-head h2{font-family:"Cormorant Garamond",serif;font-size:47px;line-height:1;margin:8px 0 10px}.section-head p{color:var(--muted);font-size:14px;margin:0}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service{border:1px solid rgba(215,163,64,.28);border-radius:11px;background:#06162f;padding:27px;min-height:190px}.service i,.service svg{color:var(--gold)}.service h3{font-family:"Cormorant Garamond",serif;font-size:25px;margin:15px 0 7px}.service p{font-size:13px;color:var(--muted);margin:0}.news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.news-card{border:1px solid rgba(215,163,64,.25);border-radius:12px;overflow:hidden;background:#06162f;min-height:290px}.news-media{height:145px;background:#071b38;overflow:hidden;display:grid;place-items:center}.news-media img{width:100%;height:100%;object-fit:cover}.news-body{padding:18px}.news-date{font-size:10px;color:var(--gold)}.news-card h3{font-family:"Cormorant Garamond",serif;font-size:22px;line-height:1.06;margin:9px 0}.news-card p{font-size:12px;color:var(--muted)}.news-link{font-size:11px;color:var(--gold2);font-weight:700}.contact{display:grid;grid-template-columns:.85fr 1.15fr;border:1px solid rgba(215,163,64,.28);border-radius:14px;overflow:hidden}.contact-info{padding:40px;background:#031027}.contact-info h2{font-family:"Cormorant Garamond",serif;font-size:40px;color:var(--gold2);margin:0 0 25px}.contact-line{display:flex;gap:14px;margin:18px 0;color:#d9deea;font-size:13px}.contact-line svg{color:var(--gold);flex:none}.contact-line small{display:block;color:var(--muted);font-size:9px;text-transform:uppercase;letter-spacing:.08em}.form{background:#f7f4ed;color:#162033;padding:38px}.form h3{font-family:"Cormorant Garamond",serif;font-size:36px;margin:0}.form p{color:#68758a;font-size:13px}.field{margin:15px 0}.field label{display:block;font-size:11px;font-weight:700;margin-bottom:5px}.field input,.field select,.field textarea{width:100%;padding:12px;border:1px solid #d5dbe4;border-radius:7px;background:white}.notice{font-size:10px!important}.msg{display:none;margin-top:12px;padding:10px;border-radius:7px;font-size:12px}.success{background:#ecfdf3;color:#166534}.error{background:#fef2f2;color:#991b1b}footer{padding:28px 0;background:#010613;border-top:1px solid var(--line);color:var(--muted)}.footer{display:flex;align-items:center;justify-content:space-between;gap:30px}.footer img{width:215px}.footer p{font-size:10px;max-width:620px;text-align:right}.floating{position:fixed;right:22px;bottom:22px;width:56px;height:56px;border-radius:50%;background:#25D366;color:white;display:grid;place-items:center;z-index:60;box-shadow:0 12px 30px rgba(0,0,0,.35)}.loader{text-align:center;color:var(--muted);grid-column:1/-1}
-@media(max-width:1050px){.shell{width:min(100% - 34px,1395px)}.nav{grid-template-columns:1fr auto}.links,.top-cta{display:none}.mobile-toggle{display:block;background:none;border:0;color:var(--gold)}.mobile-menu.open{display:flex;position:absolute;left:0;right:0;top:86px;background:#020919;flex-direction:column;padding:16px 25px;border-bottom:1px solid var(--line)}.mobile-menu a{padding:12px 0}.hero{height:auto}.hero-grid{grid-template-columns:1fr}.hero-copy{min-height:410px;padding:55px 20px}.hero-photo{height:360px}.benefits{height:auto}.benefit-grid{grid-template-columns:1fr 1fr}.benefit{min-height:105px}.about{height:auto;padding:55px 0}.about-grid{grid-template-columns:1fr}.about-visual{height:300px}.stats{height:auto}.stats-grid{grid-template-columns:1fr 1fr}.stat{min-height:85px}.service-grid,.news-grid{grid-template-columns:1fr 1fr}.contact{grid-template-columns:1fr}}
-@media(max-width:650px){.header,.nav{height:74px}.brand img{width:215px;height:55px}.mobile-menu.open{top:74px}.hero h1{font-size:47px}.hero-copy{padding:48px 6px}.hero-actions{flex-direction:column}.btn{width:100%}.hero-photo{height:280px}.wall-logo{width:230px;right:50%;transform:translateX(50%);top:45px}.benefit-grid,.stats-grid,.service-grid,.news-grid{grid-template-columns:1fr}.benefit,.stat{border-right:0;border-bottom:1px solid rgba(215,163,64,.2)}.about-grid{gap:28px}.about h2{font-size:37px}.about-visual{height:220px}.section{padding:65px 0}.contact-info,.form{padding:27px 20px}.footer{flex-direction:column}.footer p{text-align:center}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--white);font-family:Montserrat,Arial,sans-serif;line-height:1.55}
+a{color:inherit;text-decoration:none}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--gold2);outline-offset:4px}
+img{display:block;max-width:100%}
+button,input,select,textarea{font:inherit}
+#inicio,#sobre,#servicos,#noticias,#contato{scroll-margin-top:100px}
+.shell{width:min(1395px,calc(100% - 56px));margin:auto}
+.header{height:86px;position:sticky;top:0;z-index:50;background:rgba(2,9,25,.97);border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
+.nav{height:86px;display:grid;grid-template-columns:330px 1fr 220px;align-items:center;gap:24px}
+.brand{display:flex;align-items:center;min-width:0}
+.brand img{width:280px;height:64px;object-fit:contain;object-position:left center}
+.links{display:flex;justify-content:center;align-items:center;gap:48px;font-size:15px}
+.links a{padding:30px 0 23px;position:relative;transition:color .2s ease}
+.links a:hover{color:var(--gold2)}
+.links a.active{color:var(--gold2)}
+.links a.active:after{content:"";position:absolute;left:0;right:0;bottom:15px;height:2px;background:var(--gold)}
+.top-cta{justify-self:end;display:inline-flex;align-items:center;gap:9px;border:1px solid var(--gold);color:var(--gold2);padding:11px 17px;border-radius:8px;font-size:14px}
+.mobile-toggle,.mobile-menu{display:none}
+.hero{height:368px;background:linear-gradient(90deg,#020919 0%,#041126 53%,#020919 53%,#020919 100%);border-bottom:1px solid var(--line);overflow:hidden}
+.hero-grid{height:100%;display:grid;grid-template-columns:52% 48%}
+.hero-copy{display:flex;flex-direction:column;justify-content:center;padding-left:9px;padding-right:70px;position:relative}
+.hero-copy:after{content:"C";position:absolute;right:-10px;top:10px;font-family:"Cormorant Garamond",serif;font-size:330px;line-height:1;color:rgba(255,255,255,.025);font-weight:700;pointer-events:none}
+.hero h1{font-family:"Cormorant Garamond",serif;font-size:60px;line-height:.96;letter-spacing:-1px;font-weight:600;margin:0 0 22px;max-width:670px;position:relative;z-index:2}
+.hero h1 span{display:block;color:var(--gold)}
+.hero p{position:relative;z-index:2;margin:0 0 24px;color:#d4d9e3;font-size:15px;max-width:600px;line-height:1.55}
+.hero-actions{display:flex;gap:18px;position:relative;z-index:2}
+.btn{height:48px;border-radius:7px;padding:0 24px;display:inline-flex;align-items:center;justify-content:center;gap:11px;font-weight:600;font-size:14px}
+.btn-primary{background:linear-gradient(135deg,var(--gold2),#c98f27);color:#fff;min-width:215px}
+.btn-outline{border:1px solid var(--gold);color:var(--gold2);min-width:205px}
+.hero-photo{height:368px;position:relative;background:url('assets/img/hero-bg.jpg') center/cover no-repeat;overflow:hidden}
+.hero-photo:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#041126 0%,rgba(4,17,38,.35) 18%,rgba(2,9,25,.08) 60%)}
+.benefits{height:108px;background:#041126;border-bottom:1px solid var(--line)}
+.benefit-grid{height:100%;display:grid;grid-template-columns:repeat(4,1fr)}
+.benefit{display:grid;grid-template-columns:72px 1fr;align-items:center;padding:0 24px;border-right:1px solid rgba(215,163,64,.24)}
+.benefit:first-child{padding-left:8px}.benefit:last-child{border-right:0}
+.icon{width:50px;height:50px;display:grid;place-items:center;color:var(--gold)}
+.icon svg{width:42px;height:42px;stroke-width:1.5}
+.benefit h3{margin:0 0 5px;font-size:13px;font-weight:600}
+.benefit p{margin:0;color:var(--muted);font-size:12px;line-height:1.45}
+.about{height:290px;background:linear-gradient(100deg,#020919,#041126);border-bottom:1px solid var(--line)}
+.about-grid{height:100%;display:grid;grid-template-columns:44% 56%;gap:52px;align-items:center}
+.about-copy{padding-left:9px}
+.label{font-size:11px;color:var(--gold);font-weight:700;letter-spacing:.05em;text-transform:uppercase;margin-bottom:10px}
+.about h2{font-family:"Cormorant Garamond",serif;font-size:39px;line-height:1.02;font-weight:600;margin:0 0 17px;max-width:470px}
+.about h2:after{content:"";display:block;width:32px;height:2px;background:var(--gold);margin-top:15px}
+.about p{max-width:520px;font-size:12px;line-height:1.55;color:#cbd2df;margin:0 0 13px}
+.about .more{border:1px solid var(--gold);color:var(--gold2);display:inline-flex;align-items:center;gap:14px;padding:8px 15px;border-radius:6px;font-size:12px}
+.about-visual{height:256px;position:relative;border:1px solid var(--gold);border-radius:12px;overflow:hidden}
+.about-visual img{width:100%;height:100%;object-fit:cover}
+.stats{height:91px;background:#031027;border-bottom:1px solid var(--line)}
+.stats-grid{height:100%;display:grid;grid-template-columns:repeat(4,1fr)}
+.stat{display:flex;align-items:center;justify-content:center;gap:17px;border-right:1px solid rgba(215,163,64,.25)}
+.stat:last-child{border-right:0}.stat svg{color:var(--gold);width:36px;height:36px;stroke-width:1.6}
+.stat strong{display:block;color:var(--gold2);font-family:"Cormorant Garamond",serif;font-size:26px;line-height:1}
+.stat span{display:block;color:#d7dce5;font-size:11px;margin-top:5px}
+.section{padding:84px 0;background:var(--bg)}
+.section.alt{background:#041126}
+.section-head{text-align:center;max-width:760px;margin:0 auto 42px}
+.section-head small{color:var(--gold);font-size:11px;letter-spacing:.08em;text-transform:uppercase;font-weight:700}
+.section-head h2{font-family:"Cormorant Garamond",serif;font-size:47px;line-height:1;margin:8px 0 10px}
+.section-head p{color:var(--muted);font-size:14px;margin:0}
+.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.service{border:1px solid rgba(215,163,64,.28);border-radius:11px;background:#06162f;padding:27px;min-height:190px}
+.service i,.service svg{color:var(--gold)}
+.service h3{font-family:"Cormorant Garamond",serif;font-size:25px;margin:15px 0 7px}
+.service p{font-size:13px;color:var(--muted);margin:0}
+.news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.news-card{border:1px solid rgba(215,163,64,.25);border-radius:12px;overflow:hidden;background:#06162f;min-height:290px}
+.news-media{height:145px;background:#071b38;overflow:hidden;display:grid;place-items:center}
+.news-media img{width:100%;height:100%;object-fit:cover}
+.news-body{padding:18px}.news-date{font-size:10px;color:var(--gold)}
+.news-card h3{font-family:"Cormorant Garamond",serif;font-size:22px;line-height:1.06;margin:9px 0}
+.news-card p{font-size:12px;color:var(--muted)}
+.news-link{font-size:11px;color:var(--gold2);font-weight:700}
+.contact{display:grid;grid-template-columns:.85fr 1.15fr;border:1px solid rgba(215,163,64,.28);border-radius:14px;overflow:hidden}
+.contact-info{padding:40px;background:#031027}
+.contact-info h2{font-family:"Cormorant Garamond",serif;font-size:40px;color:var(--gold2);margin:0 0 25px}
+.contact-line{display:flex;gap:14px;margin:18px 0;color:#d9deea;font-size:13px}
+.contact-line svg{color:var(--gold);flex:none}
+.contact-line small{display:block;color:var(--muted);font-size:9px;text-transform:uppercase;letter-spacing:.08em}
+.form{background:#f7f4ed;color:#162033;padding:38px}
+.form h3{font-family:"Cormorant Garamond",serif;font-size:36px;margin:0}
+.form p{color:#68758a;font-size:13px}
+.field{margin:15px 0}.field label{display:block;font-size:11px;font-weight:700;margin-bottom:5px}
+.field input,.field select,.field textarea{width:100%;padding:12px;border:1px solid #d5dbe4;border-radius:7px;background:white}
+.notice{font-size:10px!important}.msg{display:none;margin-top:12px;padding:10px;border-radius:7px;font-size:12px}
+.success{background:#ecfdf3;color:#166534}.error{background:#fef2f2;color:#991b1b}
+footer{padding:28px 0;background:#010613;border-top:1px solid var(--line);color:var(--muted)}
+.footer{display:flex;align-items:center;justify-content:space-between;gap:30px}
+.footer img{width:215px}.footer p{font-size:10px;max-width:620px;text-align:right}
+.floating{position:fixed;right:22px;bottom:22px;width:56px;height:56px;border-radius:50%;background:#25D366;color:white;display:grid;place-items:center;z-index:60;box-shadow:0 12px 30px rgba(0,0,0,.35)}
+.loader{text-align:center;color:var(--muted);grid-column:1/-1}
+@media(max-width:1050px){.shell{width:min(100% - 34px,1395px)}.nav{grid-template-columns:1fr auto}.links,.top-cta{display:none}.mobile-toggle{display:block;background:none;border:0;color:var(--gold)}.mobile-menu.open{display:flex;position:absolute;left:0;right:0;top:86px;background:#020919;flex-direction:column;padding:16px 25px;border-bottom:1px solid var(--line)}.mobile-menu a{padding:12px 0;transition:color .2s ease}.mobile-menu a.active,.mobile-menu a:hover{color:var(--gold2)}.hero{height:auto}.hero-grid{grid-template-columns:1fr}.hero-copy{min-height:410px;padding:55px 20px}.hero-photo{height:360px}.benefits{height:auto}.benefit-grid{grid-template-columns:1fr 1fr}.benefit{min-height:105px}.about{height:auto;padding:55px 0}.about-grid{grid-template-columns:1fr}.about-visual{height:300px}.stats{height:auto}.stats-grid{grid-template-columns:1fr 1fr}.stat{min-height:85px}.service-grid,.news-grid{grid-template-columns:1fr 1fr}.contact{grid-template-columns:1fr}}
+@media(max-width:650px){.header,.nav{height:74px}.brand img{width:215px;height:55px}.mobile-menu.open{top:74px}.hero h1{font-size:47px}.hero-copy{padding:48px 6px}.hero-actions{flex-direction:column}.btn{width:100%}.hero-photo{height:280px}.benefit-grid,.stats-grid,.service-grid,.news-grid{grid-template-columns:1fr}.benefit,.stat{border-right:0;border-bottom:1px solid rgba(215,163,64,.2)}.about-grid{gap:28px}.about h2{font-size:37px}.about-visual{height:220px}.section{padding:65px 0}.contact-info,.form{padding:27px 20px}.footer{flex-direction:column}.footer p{text-align:center}}
 </style>
 </head>
 <body>
-<header class="header"><div class="shell nav"><a class="brand" href="#inicio"><img src="assets/img/logo-conciliare.jpg" alt="Conciliare Assessoria"></a><nav class="links"><a class="active" href="#inicio">Início</a><a href="#sobre">Sobre nós</a><a href="#servicos">Serviços</a><a href="#noticias">Blog</a><a href="#contato">Contato</a></nav><a class="top-cta" href="https://wa.me/5516993228082" target="_blank" rel="noopener"><i data-lucide="message-circle" width="18"></i> Fale conosco</a><button class="mobile-toggle" onclick="toggleMenu()" aria-label="Abrir menu"><i data-lucide="menu"></i></button></div><nav id="mobile-menu" class="mobile-menu"><a href="#inicio" onclick="toggleMenu()">Início</a><a href="#sobre" onclick="toggleMenu()">Sobre nós</a><a href="#servicos" onclick="toggleMenu()">Serviços</a><a href="#noticias" onclick="toggleMenu()">Blog</a><a href="#contato" onclick="toggleMenu()">Contato</a></nav></header>
+<header class="header">
+  <div class="shell nav">
+    <a class="brand" href="#inicio" aria-label="Conciliare Assessoria - Início"><img src="assets/img/logo-conciliare.jpg" alt="Conciliare Assessoria"></a>
+    <nav class="links" aria-label="Navegação principal">
+      <a class="active" href="#inicio" aria-current="page">Início</a>
+      <a href="#sobre">Sobre nós</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#noticias">Blog</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <a class="top-cta" href="https://wa.me/5516993228082" target="_blank" rel="noopener"><i data-lucide="message-circle" width="18"></i> Fale conosco</a>
+    <button class="mobile-toggle" type="button" onclick="toggleMenu()" aria-label="Abrir menu" aria-controls="mobile-menu" aria-expanded="false"><i data-lucide="menu"></i></button>
+  </div>
+  <nav id="mobile-menu" class="mobile-menu" aria-label="Navegação móvel">
+    <a class="active" href="#inicio" aria-current="page">Início</a>
+    <a href="#sobre">Sobre nós</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#noticias">Blog</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
 <main>
-<section id="inicio" class="hero"><div class="shell hero-grid"><div class="hero-copy"><h1>Soluções estratégicas para <span>empresas e pessoas.</span></h1><p>Atuamos com assessoria especializada, oferecendo orientação estratégica, atendimento humanizado e soluções eficazes para cada necessidade.</p><div class="hero-actions"><a class="btn btn-primary" href="#servicos">Nossos serviços <i data-lucide="arrow-right" width="18"></i></a><a class="btn btn-outline" href="https://wa.me/5516993228082" target="_blank" rel="noopener">Fale conosco <i data-lucide="message-circle" width="18"></i></a></div></div><div class="hero-photo"><img class="wall-logo" src="assets/img/logo-conciliare.jpg" alt="Conciliare Assessoria"></div></div></section>
+<section id="inicio" class="hero"><div class="shell hero-grid"><div class="hero-copy"><h1>Soluções estratégicas para <span>empresas e pessoas.</span></h1><p>Atuamos com assessoria especializada, oferecendo orientação estratégica, atendimento humanizado e soluções eficazes para cada necessidade.</p><div class="hero-actions"><a class="btn btn-primary" href="#servicos">Nossos serviços <i data-lucide="arrow-right" width="18"></i></a><a class="btn btn-outline" href="https://wa.me/5516993228082" target="_blank" rel="noopener">Fale conosco <i data-lucide="message-circle" width="18"></i></a></div></div><div class="hero-photo" role="img" aria-label="Ambiente da Conciliare Assessoria"></div></div></section>
 <section class="benefits"><div class="shell benefit-grid"><article class="benefit"><div class="icon"><i data-lucide="handshake"></i></div><div><h3>Negociação e Conciliação</h3><p>Atuação orientada ao diálogo, estratégia e solução.</p></div></article><article class="benefit"><div class="icon"><i data-lucide="circle-dollar-sign"></i></div><div><h3>Assessoria Especializada</h3><p>Experiência e orientação para cada necessidade.</p></div></article><article class="benefit"><div class="icon"><i data-lucide="chart-no-axes-column-increasing"></i></div><div><h3>Consultoria Personalizada</h3><p>Soluções sob medida para desafios específicos.</p></div></article><article class="benefit"><div class="icon"><i data-lucide="shield-check"></i></div><div><h3>Segurança e Confiança</h3><p>Transparência, proximidade e compromisso.</p></div></article></div></section>
 <section id="sobre" class="about"><div class="shell about-grid"><div class="about-copy"><div class="label">Sobre nós</div><h2>Compromisso com resultados e relações de confiança.</h2><p>A Conciliare Assessoria reúne mais de 20 anos de atuação e uma abordagem baseada em proximidade, ética, clareza e estratégia.</p><p>Com atendimento humanizado, buscamos compreender cada situação e apresentar caminhos seguros e adequados para nossos clientes.</p><a class="more" href="#contato">Saiba mais sobre nós <i data-lucide="arrow-right" width="16"></i></a></div><div class="about-visual"><img src="assets/img/sobre-nos.jpg" alt="Atendimento da Conciliare Assessoria"></div></div></section>
 <section class="stats"><div class="shell stats-grid"><div class="stat"><i data-lucide="users"></i><div><strong>20+</strong><span>Anos de atuação</span></div></div><div class="stat"><i data-lucide="building-2"></i><div><strong>Milhares</strong><span>De casos acompanhados</span></div></div><div class="stat"><i data-lucide="circle-check-big"></i><div><strong>Atendimento</strong><span>Próximo e humanizado</span></div></div><div class="stat"><i data-lucide="map-pin"></i><div><strong>Ribeirão Preto</strong><span>Atuação local e regional</span></div></div></div></section>
@@ -31,11 +144,72 @@
 <section id="contato" class="section"><div class="shell contact"><div class="contact-info"><h2>Fale Conosco</h2><div class="contact-line"><i data-lucide="phone"></i><div><small>Telefone / WhatsApp</small><a href="https://wa.me/5516993228082" target="_blank">(16) 99322-8082</a></div></div><div class="contact-line"><i data-lucide="mail"></i><div><small>E-mail</small><a href="mailto:conciliare.assessoria@hotmail.com">conciliare.assessoria@hotmail.com</a></div></div><div class="contact-line"><i data-lucide="map-pin"></i><div><small>Endereço</small>R. Dr. João Gomes Rocha, 157 - 5<br>Jardim Irajá - Ribeirão Preto - SP</div></div></div><div class="form"><h3>Envie sua dúvida</h3><p>Preencha os dados e entraremos em contato.</p><form id="contact-form" action="https://formsubmit.co/conciliare.assessoria@hotmail.com" method="POST"><input type="hidden" name="_subject" value="Novo Contato pelo Site Conciliare!"><input type="hidden" name="_template" value="table"><input type="hidden" name="_captcha" value="false"><div class="field"><label>Nome completo</label><input type="text" name="Nome_Completo" required></div><div class="field"><label>Telefone com DDD</label><input type="tel" name="Telefone" required></div><div class="field"><label>Assunto</label><select name="Assunto"><option>Selecione o assunto</option><option>INSS</option><option>Benefícios Assistenciais</option><option>Revisão de Aposentadoria</option><option>Trabalhista</option><option>Assessoria de Trânsito</option><option>Cível / Família</option></select></div><div class="field"><label>Como podemos ajudar?</label><textarea rows="4" name="Mensagem" required></textarea></div><button class="btn btn-primary" type="submit">Enviar mensagem <i data-lucide="send" width="17"></i></button><p class="notice">Ao enviar, você concorda com o tratamento dos seus dados conforme a nossa <a href="privacidade.html"><u>Política de Privacidade</u></a>.</p></form><div id="form-success" class="msg success">Mensagem enviada com sucesso.</div><div id="form-error" class="msg error">Não foi possível enviar. Tente novamente ou fale pelo WhatsApp.</div></div></div></section>
 </main>
 <footer><div class="shell footer"><img src="assets/img/logo-conciliare.jpg" alt="Conciliare Assessoria"><p>Pertence a Adriana Mendes da Cruz Sousa (© 2026 SoftGestão. Todos os direitos reservados.). Todos os direitos e marca registrada são dela.</p></div></footer>
-<a class="floating" href="https://wa.me/5516993228082" target="_blank" aria-label="Falar pelo WhatsApp"><i data-lucide="message-circle"></i></a>
+<a class="floating" href="https://wa.me/5516993228082" target="_blank" rel="noopener" aria-label="Falar pelo WhatsApp"><i data-lucide="message-circle"></i></a>
 <script>
-function icons(){if(window.lucide)lucide.createIcons()}icons();function toggleMenu(){document.getElementById('mobile-menu').classList.toggle('open')}
-const form=document.getElementById('contact-form');if(form){form.addEventListener('submit',async e=>{e.preventDefault();try{const r=await fetch(form.action,{method:'POST',body:new FormData(form),headers:{Accept:'application/json'}});document.getElementById(r.ok?'form-success':'form-error').style.display='block';if(r.ok)form.reset()}catch(e){document.getElementById('form-error').style.display='block'}})}
-const RSS_URL='https://www.conjur.com.br/rss.xml',API_URL=`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(RSS_URL)}`;async function news(){const c=document.getElementById('news-container');try{const r=await fetch(API_URL),d=await r.json();if(d.status!=='ok')throw 0;c.innerHTML='';d.items.slice(0,3).forEach(i=>{const desc=(i.description||'').replace(/<[^>]*>/g,'').slice(0,150),date=new Date(i.pubDate).toLocaleDateString('pt-BR');c.innerHTML+=`<article class="news-card"><div class="news-media">${i.thumbnail?`<img src="${i.thumbnail}" alt="Notícia">`:'<i data-lucide="scale"></i>'}</div><div class="news-body"><span class="news-date">${date}</span><h3>${i.title}</h3><p>${desc}...</p><a class="news-link" href="${i.link}" target="_blank" rel="noopener">Ler notícia completa →</a></div></article>`});icons()}catch(e){c.innerHTML='<div class="loader">Não foi possível carregar as notícias neste momento.</div>'}}news();
+function icons(){if(window.lucide)lucide.createIcons()}
+icons();
+
+const header=document.querySelector('.header');
+const mobileMenu=document.getElementById('mobile-menu');
+const mobileToggle=document.querySelector('.mobile-toggle');
+const navLinks=[...document.querySelectorAll('.links a[href^="#"], .mobile-menu a[href^="#"]')];
+const desktopLinks=[...document.querySelectorAll('.links a[href^="#"]')];
+const sections=desktopLinks.map(link=>document.querySelector(link.getAttribute('href'))).filter(Boolean);
+
+function toggleMenu(force){
+  const shouldOpen=typeof force==='boolean'?force:!mobileMenu.classList.contains('open');
+  mobileMenu.classList.toggle('open',shouldOpen);
+  mobileToggle.setAttribute('aria-expanded',String(shouldOpen));
+  mobileToggle.setAttribute('aria-label',shouldOpen?'Fechar menu':'Abrir menu');
+}
+
+function setActiveSection(id){
+  navLinks.forEach(link=>{
+    const active=link.getAttribute('href')===`#${id}`;
+    link.classList.toggle('active',active);
+    if(active)link.setAttribute('aria-current','page');
+    else link.removeAttribute('aria-current');
+  });
+}
+
+navLinks.forEach(link=>{
+  link.addEventListener('click',event=>{
+    const target=document.querySelector(link.getAttribute('href'));
+    if(!target)return;
+    event.preventDefault();
+    const headerHeight=header?header.offsetHeight:0;
+    const top=Math.max(0,target.getBoundingClientRect().top+window.scrollY-headerHeight-10);
+    window.scrollTo({top,behavior:'smooth'});
+    setActiveSection(target.id);
+    if(mobileMenu.classList.contains('open'))toggleMenu(false);
+  });
+});
+
+function updateActiveFromScroll(){
+  if(!sections.length)return;
+  const headerHeight=header?header.offsetHeight:0;
+  const marker=window.scrollY+headerHeight+80;
+  let current=sections[0];
+  sections.forEach(section=>{if(section.offsetTop<=marker)current=section});
+  if(window.innerHeight+window.scrollY>=document.documentElement.scrollHeight-8)current=sections[sections.length-1];
+  setActiveSection(current.id);
+}
+
+let scrollTicking=false;
+window.addEventListener('scroll',()=>{
+  if(scrollTicking)return;
+  scrollTicking=true;
+  requestAnimationFrame(()=>{updateActiveFromScroll();scrollTicking=false});
+},{passive:true});
+window.addEventListener('resize',updateActiveFromScroll);
+updateActiveFromScroll();
+
+const form=document.getElementById('contact-form');
+if(form){form.addEventListener('submit',async e=>{e.preventDefault();try{const r=await fetch(form.action,{method:'POST',body:new FormData(form),headers:{Accept:'application/json'}});document.getElementById(r.ok?'form-success':'form-error').style.display='block';if(r.ok)form.reset()}catch(e){document.getElementById('form-error').style.display='block'}})}
+
+const RSS_URL='https://www.conjur.com.br/rss.xml',API_URL=`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(RSS_URL)}`;
+async function news(){const c=document.getElementById('news-container');try{const r=await fetch(API_URL),d=await r.json();if(d.status!=='ok')throw 0;c.innerHTML='';d.items.slice(0,3).forEach(i=>{const desc=(i.description||'').replace(/<[^>]*>/g,'').slice(0,150),date=new Date(i.pubDate).toLocaleDateString('pt-BR');c.innerHTML+=`<article class="news-card"><div class="news-media">${i.thumbnail?`<img src="${i.thumbnail}" alt="Notícia">`:'<i data-lucide="scale"></i>'}</div><div class="news-body"><span class="news-date">${date}</span><h3>${i.title}</h3><p>${desc}...</p><a class="news-link" href="${i.link}" target="_blank" rel="noopener">Ler notícia completa →</a></div></article>`});icons()}catch(e){c.innerHTML='<div class="loader">Não foi possível carregar as notícias neste momento.</div>'}}
+news();
 </script>
 </body>
 </html>
