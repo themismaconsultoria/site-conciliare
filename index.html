@@ -26,7 +26,7 @@ button,input,select,textarea{font:inherit}
 .header{height:86px;position:sticky;top:0;z-index:50;background:rgba(2,9,25,.97);border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
 .nav{height:86px;display:grid;grid-template-columns:330px 1fr 220px;align-items:center;gap:24px}
 .brand{display:flex;align-items:center;min-width:0}
-.brand img{width:280px;height:64px;object-fit:contain;object-position:left center}
+.brand img{width:280px;height:70px;object-fit:contain;object-position:left center;background:#f7f4ed;border-radius:8px;padding:4px 10px}
 .links{display:flex;justify-content:center;align-items:center;gap:48px;font-size:15px}
 .links a{padding:30px 0 23px;position:relative;transition:color .2s ease}
 .links a:hover{color:var(--gold2)}
@@ -105,17 +105,17 @@ button,input,select,textarea{font:inherit}
 .success{background:#ecfdf3;color:#166534}.error{background:#fef2f2;color:#991b1b}
 footer{padding:28px 0;background:#010613;border-top:1px solid var(--line);color:var(--muted)}
 .footer{display:flex;align-items:center;justify-content:space-between;gap:30px}
-.footer img{width:215px}.footer p{font-size:10px;max-width:620px;text-align:right}
+.footer img{width:215px;height:auto;object-fit:contain;background:#f7f4ed;border-radius:8px;padding:5px 10px}.footer p{font-size:10px;max-width:620px;text-align:right}
 .floating{position:fixed;right:22px;bottom:22px;width:56px;height:56px;border-radius:50%;background:#25D366;color:white;display:grid;place-items:center;z-index:60;box-shadow:0 12px 30px rgba(0,0,0,.35)}
 .loader{text-align:center;color:var(--muted);grid-column:1/-1}
 @media(max-width:1050px){.shell{width:min(100% - 34px,1395px)}.nav{grid-template-columns:1fr auto}.links,.top-cta{display:none}.mobile-toggle{display:block;background:none;border:0;color:var(--gold)}.mobile-menu.open{display:flex;position:absolute;left:0;right:0;top:86px;background:#020919;flex-direction:column;padding:16px 25px;border-bottom:1px solid var(--line)}.mobile-menu a{padding:12px 0;transition:color .2s ease}.mobile-menu a.active,.mobile-menu a:hover{color:var(--gold2)}.hero{height:auto}.hero-grid{grid-template-columns:1fr}.hero-copy{min-height:410px;padding:55px 20px}.hero-photo{height:360px}.benefits{height:auto}.benefit-grid{grid-template-columns:1fr 1fr}.benefit{min-height:105px}.about{height:auto;padding:55px 0}.about-grid{grid-template-columns:1fr}.about-visual{height:300px}.stats{height:auto}.stats-grid{grid-template-columns:1fr 1fr}.stat{min-height:85px}.service-grid,.news-grid{grid-template-columns:1fr 1fr}.contact{grid-template-columns:1fr}}
-@media(max-width:650px){.header,.nav{height:74px}.brand img{width:215px;height:55px}.mobile-menu.open{top:74px}.hero h1{font-size:47px}.hero-copy{padding:48px 6px}.hero-actions{flex-direction:column}.btn{width:100%}.hero-photo{height:280px}.benefit-grid,.stats-grid,.service-grid,.news-grid{grid-template-columns:1fr}.benefit,.stat{border-right:0;border-bottom:1px solid rgba(215,163,64,.2)}.about-grid{gap:28px}.about h2{font-size:37px}.about-visual{height:220px}.section{padding:65px 0}.contact-info,.form{padding:27px 20px}.footer{flex-direction:column}.footer p{text-align:center}}
+@media(max-width:650px){.header,.nav{height:74px}.brand img{width:215px;height:58px}.mobile-menu.open{top:74px}.hero h1{font-size:47px}.hero-copy{padding:48px 6px}.hero-actions{flex-direction:column}.btn{width:100%}.hero-photo{height:280px}.benefit-grid,.stats-grid,.service-grid,.news-grid{grid-template-columns:1fr}.benefit,.stat{border-right:0;border-bottom:1px solid rgba(215,163,64,.2)}.about-grid{gap:28px}.about h2{font-size:37px}.about-visual{height:220px}.section{padding:65px 0}.contact-info,.form{padding:27px 20px}.footer{flex-direction:column}.footer p{text-align:center}}
 </style>
 </head>
 <body>
 <header class="header">
   <div class="shell nav">
-    <a class="brand" href="#inicio" aria-label="Conciliare Assessoria - Início"><img src="assets/img/logo-conciliare.jpg" alt="Conciliare Assessoria"></a>
+    <a class="brand" href="#inicio" aria-label="Conciliare Assessoria - Início"><img src="assets/img/logo-conciliare-20260812.jpg" alt="Conciliare Assessoria" width="727" height="332"></a>
     <nav class="links" aria-label="Navegação principal">
       <a class="active" href="#inicio" aria-current="page">Início</a>
       <a href="#sobre">Sobre nós</a>
@@ -143,7 +143,7 @@ footer{padding:28px 0;background:#010613;border-top:1px solid var(--line);color:
 <section id="noticias" class="section alt"><div class="shell"><div class="section-head"><small>Informação jurídica</small><h2>Notícias e atualizações</h2><p>Conteúdo recente do cenário jurídico brasileiro.</p></div><div id="news-container" class="news-grid"><div class="loader">Carregando notícias...</div></div></div></section>
 <section id="contato" class="section"><div class="shell contact"><div class="contact-info"><h2>Fale Conosco</h2><div class="contact-line"><i data-lucide="phone"></i><div><small>Telefone / WhatsApp</small><a href="https://wa.me/5516993228082" target="_blank">(16) 99322-8082</a></div></div><div class="contact-line"><i data-lucide="mail"></i><div><small>E-mail</small><a href="mailto:conciliare.assessoria@hotmail.com">conciliare.assessoria@hotmail.com</a></div></div><div class="contact-line"><i data-lucide="map-pin"></i><div><small>Endereço</small>R. Dr. João Gomes Rocha, 157 - 5<br>Jardim Irajá - Ribeirão Preto - SP</div></div></div><div class="form"><h3>Envie sua dúvida</h3><p>Preencha os dados e entraremos em contato.</p><form id="contact-form" action="https://formsubmit.co/conciliare.assessoria@hotmail.com" method="POST"><input type="hidden" name="_subject" value="Novo Contato pelo Site Conciliare!"><input type="hidden" name="_template" value="table"><input type="hidden" name="_captcha" value="false"><div class="field"><label>Nome completo</label><input type="text" name="Nome_Completo" required></div><div class="field"><label>Telefone com DDD</label><input type="tel" name="Telefone" required></div><div class="field"><label>Assunto</label><select name="Assunto"><option>Selecione o assunto</option><option>INSS</option><option>Benefícios Assistenciais</option><option>Revisão de Aposentadoria</option><option>Trabalhista</option><option>Assessoria de Trânsito</option><option>Cível / Família</option></select></div><div class="field"><label>Como podemos ajudar?</label><textarea rows="4" name="Mensagem" required></textarea></div><button class="btn btn-primary" type="submit">Enviar mensagem <i data-lucide="send" width="17"></i></button><p class="notice">Ao enviar, você concorda com o tratamento dos seus dados conforme a nossa <a href="privacidade.html"><u>Política de Privacidade</u></a>.</p></form><div id="form-success" class="msg success">Mensagem enviada com sucesso.</div><div id="form-error" class="msg error">Não foi possível enviar. Tente novamente ou fale pelo WhatsApp.</div></div></div></section>
 </main>
-<footer><div class="shell footer"><img src="assets/img/logo-conciliare.jpg" alt="Conciliare Assessoria"><p>Pertence a Adriana Mendes da Cruz Sousa (© 2026 SoftGestão. Todos os direitos reservados.). Todos os direitos e marca registrada são dela.</p></div></footer>
+<footer><div class="shell footer"><img src="assets/img/logo-conciliare-20260812.jpg" alt="Conciliare Assessoria" width="727" height="332"><p>Pertence a Adriana Mendes da Cruz Sousa (© 2026 SoftGestão. Todos os direitos reservados.). Todos os direitos e marca registrada são dela.</p></div></footer>
 <a class="floating" href="https://wa.me/5516993228082" target="_blank" rel="noopener" aria-label="Falar pelo WhatsApp"><i data-lucide="message-circle"></i></a>
 <script>
 function icons(){if(window.lucide)lucide.createIcons()}
