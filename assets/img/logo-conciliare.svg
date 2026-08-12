@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 210" role="img" aria-label="Conciliare Assessoria">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f6e3ae"/>
+      <stop offset="45%" stop-color="#d7a340"/>
+      <stop offset="100%" stop-color="#a1701f"/>
+    </linearGradient>
+  </defs>
+
+  <!-- monogram: two interlocking "C" arcs -->
+  <path d="M 267.5 105.3 A 58 58 0 1 1 267.5 38.7" fill="none" stroke="url(#goldGrad)" stroke-width="11" stroke-linecap="butt"/>
+  <path d="M 255.5 104.6 A 40 40 0 1 1 255.5 55.4" fill="none" stroke="url(#goldGrad)" stroke-width="16" stroke-linecap="butt"/>
+
+  <text x="220" y="168" text-anchor="middle" font-family="Montserrat, Arial, Helvetica, sans-serif" font-weight="800" font-size="40" letter-spacing="2.5" fill="url(#goldGrad)">CONCILIARE</text>
+
+  <line x1="118" y1="187" x2="173" y2="187" stroke="#d7a340" stroke-width="1.2"/>
+  <text x="220" y="192" text-anchor="middle" font-family="Montserrat, Arial, Helvetica, sans-serif" font-weight="700" font-size="13" letter-spacing="6" fill="url(#goldGrad)">ASSESSORIA</text>
+  <line x1="267" y1="187" x2="322" y2="187" stroke="#d7a340" stroke-width="1.2"/>
+</svg>
