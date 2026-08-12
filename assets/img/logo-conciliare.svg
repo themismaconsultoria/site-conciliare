@@ -13,7 +13,7 @@
 
   <text x="220" y="168" text-anchor="middle" font-family="Montserrat, Arial, Helvetica, sans-serif" font-weight="800" font-size="40" letter-spacing="2.5" fill="url(#goldGrad)">CONCILIARE</text>
 
-  <line x1="118" y1="187" x2="173" y2="187" stroke="#d7a340" stroke-width="1.2"/>
-  <text x="220" y="192" text-anchor="middle" font-family="Montserrat, Arial, Helvetica, sans-serif" font-weight="700" font-size="13" letter-spacing="6" fill="url(#goldGrad)">ASSESSORIA</text>
-  <line x1="267" y1="187" x2="322" y2="187" stroke="#d7a340" stroke-width="1.2"/>
+  <line x1="90" y1="187" x2="130" y2="187" stroke="#d7a340" stroke-width="1.2"/>
+  <text x="220" y="192" text-anchor="middle" textLength="170" lengthAdjust="spacingAndGlyphs" font-family="Montserrat, Arial, Helvetica, sans-serif" font-weight="700" font-size="13" letter-spacing="6" fill="url(#goldGrad)">ASSESSORIA</text>
+  <line x1="310" y1="187" x2="350" y2="187" stroke="#d7a340" stroke-width="1.2"/>
 </svg>
