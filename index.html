@@ -3,37 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CONCILIARE - Assessoria Jurídica</title>
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <script src="https://unpkg.com/lucide@latest"></script>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        navy: '#051024',
-                        gold: '#D4AF37',
-                        goldHover: '#B5952F',
-                    },
-                    fontFamily: {
-                        serif: ['Cinzel', 'serif'],
-                        sans: ['Lato', 'sans-serif'],
-                    },
-                    backgroundImage: {
-                        'hero-pattern': "url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80')",
-                        'dots': "radial-gradient(#D4AF37 1px, transparent 1px)"
-                    }
-                }
-            }
-        }
+    <title>Conciliare | Assessoria em INSS, Trabalhista e Cível</title>
+    <meta name="description" content="Assessoria jurídica em Ribeirão Preto-SP: INSS, benefícios assistenciais, revisão de aposentadoria, trabalhista, trânsito e família. Mais de 20 anos de atuação.">
+    <link rel="canonical" href="https://conciliareassessoria.com.br/">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+    <meta property="og:title" content="Conciliare Assessoria Jurídica">
+    <meta property="og:description" content="INSS, benefícios assistenciais, revisão de aposentadoria, trabalhista, trânsito e família. Mais de 20 anos de atuação em Ribeirão Preto-SP.">
+    <meta property="og:image" content="https://conciliareassessoria.com.br/assets/img/sobre-nos.jpg">
+    <meta property="og:url" content="https://conciliareassessoria.com.br/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+
+    <!-- Dados estruturados: ajuda o Google a exibir a Conciliare como negócio jurídico local nos resultados de busca -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LegalService",
+      "name": "Conciliare Assessoria",
+      "url": "https://conciliareassessoria.com.br/",
+      "image": "https://conciliareassessoria.com.br/assets/img/sobre-nos.jpg",
+      "description": "Assessoria jurídica em Ribeirão Preto-SP: INSS, benefícios assistenciais, revisão de aposentadoria, trabalhista, trânsito e família.",
+      "telephone": "+5516993228082",
+      "email": "conciliare.assessoria@hotmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "R. Dr. João Gomes Rocha, 157",
+        "addressLocality": "Ribeirão Preto",
+        "addressRegion": "SP",
+        "addressCountry": "BR"
+      },
+      "areaServed": "Ribeirão Preto e região",
+      "priceRange": "Sob consulta"
+    }
     </script>
+
+    <link rel="stylesheet" href="/assets/css/tailwind.css">
+    <script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <style>
         /* Animação do Botão WhatsApp */
@@ -78,7 +88,7 @@
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans flex flex-col min-h-screen selection:bg-gold selection:text-white">
 
-    <header id="main-header" class="bg-navy sticky top-0 z-50 transition-all duration-300 py-4 border-b border-gold/20 shadow-2xl">
+    <header id="main-header" class="bg-navy sticky top-0 z-50 transition-all duration-300 py-5 border-b border-gold/20 shadow-2xl">
         <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
             
             <div class="flex items-center gap-4 md:gap-6 group cursor-pointer" onclick="window.location.href='#inicio'">
@@ -87,9 +97,9 @@
                 </div> 
 
                 <div class="flex flex-col">
-                    <h1 class="text-xl md:text-3xl font-serif font-bold text-white tracking-widest leading-none group-hover:text-gold transition-colors duration-300">
+                    <p class="text-xl md:text-3xl font-serif font-bold text-white tracking-widest leading-none group-hover:text-gold transition-colors duration-300">
                         CONCILIARE
-                    </h1>
+                    </p>
                     <p class="text-[9px] md:text-xs text-gold tracking-[0.2em] md:tracking-[0.3em] uppercase mt-1 font-semibold">
                         ASSESSORIA
                     </p>
@@ -132,10 +142,10 @@
                     Excelência e Comprometimento
                 </div>
                 
-                <h2 class="text-3xl md:text-5xl lg:text-7xl font-serif font-bold text-white leading-tight min-h-[120px] md:min-h-[160px] flex flex-col justify-center items-center drop-shadow-2xl">
-                    Assessoria em <br class="hidden md:block"/> 
-                    <span id="typewriter" class="text-gold italic border-r-4 border-gold pr-2 animate-pulse bg-gradient-to-r from-gold to-yellow-200 bg-clip-text text-transparent"></span>
-                </h2>
+                <h1 class="text-3xl md:text-5xl lg:text-7xl font-serif font-bold text-white leading-tight min-h-[120px] md:min-h-[160px] flex flex-col justify-center items-center drop-shadow-2xl">
+                    Assessoria em <br class="hidden md:block"/>
+                    <span id="typewriter" class="text-gold italic border-r-4 border-gold pr-2 animate-pulse bg-gradient-to-r from-gold to-yellow-200 bg-clip-text text-transparent">Questões Trabalhistas.</span>
+                </h1>
                 
                 <p class="text-slate-300 text-base md:text-xl leading-relaxed max-w-2xl mx-auto px-2 font-light">
                     Combinamos <strong>experiência em assessoria</strong> e atendimento humanizado para garantir seus direitos com a máxima agilidade e transparência.
@@ -259,7 +269,7 @@
                     <div class="absolute -top-4 -right-4 w-24 h-24 border-t-4 border-r-4 border-gold z-0"></div>
                     <div class="absolute -bottom-4 -left-4 w-24 h-24 border-b-4 border-l-4 border-gold z-0"></div>
                     <div class="relative z-10 rounded-sm overflow-hidden shadow-2xl">
-                        <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&q=80" alt="Consultoria Jurídica Humanizada e Feliz" class="w-full h-auto object-cover hover:scale-105 transition-transform duration-700">
+                        <img src="/assets/img/sobre-nos.jpg" alt="Consultoria Jurídica Humanizada e Feliz" width="1200" height="800" loading="lazy" class="w-full h-auto object-cover hover:scale-105 transition-transform duration-700">
                         <div class="absolute inset-0 bg-navy/10 mix-blend-multiply"></div>
                     </div>
                 </div>
@@ -279,7 +289,7 @@
                 </div>
                 <div class="p-6" data-aos="zoom-in" data-aos-delay="100">
                     <div class="text-gold text-4xl md:text-5xl font-bold mb-3 font-serif">Expertise</div>
-                    <div class="text-slate-300 uppercase tracking-[0.1em] text-sm font-bold leading-relaxed">Especialistas em INSS, Trabalhista, Trânsito e Cível</div>
+                    <div class="text-slate-300 uppercase tracking-[0.2em] text-sm font-bold">Especialistas em INSS, Trabalhista, Trânsito e Cível</div>
                 </div>
                 <div class="p-6" data-aos="zoom-in" data-aos-delay="200">
                     <div class="text-gold text-4xl md:text-5xl font-bold mb-3 font-serif">Agilidade</div>
@@ -378,17 +388,21 @@
                     <h3 class="text-2xl font-serif font-bold text-navy mb-2">Envie sua dúvida</h3>
                     <p class="text-slate-500 mb-8 text-sm">Preencha o formulário abaixo e entraremos em contato.</p>
                     
-                    <form class="space-y-6" onsubmit="event.preventDefault(); alert('Mensagem enviada! Entraremos em contato em breve.')">
+                    <form id="contact-form" class="space-y-6" action="https://formsubmit.co/conciliare.assessoria@hotmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="Novo Contato pelo Site Conciliare!">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_captcha" value="false">
+
                         <div class="group relative">
-                            <input type="text" placeholder=" " class="peer w-full border-b-2 border-slate-200 p-3 focus:outline-none focus:border-gold bg-transparent transition-colors placeholder-transparent text-slate-800" required>
+                            <input type="text" name="Nome_Completo" placeholder=" " class="peer w-full border-b-2 border-slate-200 p-3 focus:outline-none focus:border-gold bg-transparent transition-colors placeholder-transparent text-slate-800" required>
                             <label class="absolute left-3 top-3 text-slate-400 text-sm transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-base peer-placeholder-shown:text-slate-400 peer-focus:-top-4 peer-focus:text-xs peer-focus:text-gold font-bold pointer-events-none">Nome Completo</label>
                         </div>
                         <div class="group relative">
-                            <input type="tel" placeholder=" " class="peer w-full border-b-2 border-slate-200 p-3 focus:outline-none focus:border-gold bg-transparent transition-colors placeholder-transparent text-slate-800" required>
+                            <input type="tel" name="Telefone" placeholder=" " class="peer w-full border-b-2 border-slate-200 p-3 focus:outline-none focus:border-gold bg-transparent transition-colors placeholder-transparent text-slate-800" required>
                             <label class="absolute left-3 top-3 text-slate-400 text-sm transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-base peer-placeholder-shown:text-slate-400 peer-focus:-top-4 peer-focus:text-xs peer-focus:text-gold font-bold pointer-events-none">Telefone com DDD</label>
                         </div>
                         <div class="group">
-                            <select class="w-full border-b-2 border-slate-200 p-3 focus:outline-none focus:border-gold bg-transparent transition-colors text-slate-600 cursor-pointer">
+                            <select name="Assunto" class="w-full border-b-2 border-slate-200 p-3 focus:outline-none focus:border-gold bg-transparent transition-colors text-slate-600 cursor-pointer">
                                 <option>Selecione o Assunto</option>
                                 <option>Ações contra INSS</option>
                                 <option>Benefícios Assistenciais</option>
@@ -399,19 +413,29 @@
                             </select>
                         </div>
                         <div class="group relative">
-                            <textarea rows="3" placeholder=" " class="peer w-full border-b-2 border-slate-200 p-3 focus:outline-none focus:border-gold bg-transparent transition-colors placeholder-transparent text-slate-800"></textarea>
+                            <textarea rows="3" name="Mensagem" placeholder=" " class="peer w-full border-b-2 border-slate-200 p-3 focus:outline-none focus:border-gold bg-transparent transition-colors placeholder-transparent text-slate-800" required></textarea>
                             <label class="absolute left-3 top-3 text-slate-400 text-sm transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-base peer-placeholder-shown:text-slate-400 peer-focus:-top-4 peer-focus:text-xs peer-focus:text-gold font-bold pointer-events-none">Como podemos ajudar?</label>
                         </div>
-                        <button class="bg-navy text-white px-10 py-4 hover:bg-goldHover transition-colors duration-300 font-bold tracking-wide uppercase text-sm mt-4 w-full md:w-auto rounded-sm shadow-lg hover:shadow-xl hover:-translate-y-1">
+                        <button type="submit" class="bg-navy text-white px-10 py-4 hover:bg-goldHover transition-colors duration-300 font-bold tracking-wide uppercase text-sm mt-4 w-full md:w-auto rounded-sm shadow-lg hover:shadow-xl hover:-translate-y-1">
                             Enviar Mensagem
                         </button>
+                        <p class="text-[11px] text-slate-400 mt-2">
+                            Ao enviar, você concorda com o tratamento dos seus dados conforme a nossa <a href="/privacidade.html" class="underline hover:text-goldHover">Política de Privacidade</a>.
+                        </p>
                     </form>
+
+                    <div id="form-success" class="hidden mt-6 p-4 bg-green-50 text-green-700 rounded-sm text-center font-medium border border-green-200">
+                        Mensagem enviada com sucesso. Entraremos em contato em breve.
+                    </div>
+                    <div id="form-error" class="hidden mt-6 p-4 bg-red-50 text-red-700 rounded-sm text-center font-medium border border-red-200">
+                        Não foi possível enviar a mensagem. Tente novamente ou fale pelo WhatsApp.
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-black text-slate-500 py-12 border-t border-slate-900">
+    <footer class="bg-navy text-slate-500 py-12 border-t border-slate-800">
         <div class="max-w-7xl mx-auto px-4 text-center">
             <div class="flex justify-center items-center gap-3 mb-6" data-aos="fade-up">
                 <div class="w-10 h-10 flex items-center justify-center border border-gold outline outline-1 outline-offset-4 outline-gold/50 rounded-full hover:bg-gold/10 transition-colors">
@@ -420,11 +444,12 @@
                 <span class="font-serif font-bold text-2xl tracking-[0.2em] text-white">CONCILIARE</span>
             </div>
             
-            <div class="flex justify-center gap-6 mb-8 text-sm font-medium">
+            <div class="flex flex-wrap justify-center gap-6 mb-8 text-sm font-medium">
                 <a href="#inicio" class="hover:text-gold transition-colors">Início</a>
                 <a href="#atuacao" class="hover:text-gold transition-colors">Áreas de Atuação</a>
                 <a href="#noticias" class="hover:text-gold transition-colors">Notícias</a>
                 <a href="#contato" class="hover:text-gold transition-colors">Contato</a>
+                <a href="/privacidade.html" class="hover:text-gold transition-colors">Política de Privacidade</a>
             </div>
 
             <p class="text-[10px] md:text-xs px-4 leading-relaxed opacity-60 hover:opacity-100 transition-opacity">
@@ -451,6 +476,35 @@
             menu.classList.toggle('hidden');
         }
 
+        const contactForm = document.getElementById('contact-form');
+        const contactSuccess = document.getElementById('form-success');
+        const contactError = document.getElementById('form-error');
+
+        if (contactForm) {
+            contactForm.addEventListener('submit', async function (event) {
+                event.preventDefault();
+                const formData = new FormData(contactForm);
+                try {
+                    const response = await fetch(contactForm.action, {
+                        method: 'POST',
+                        body: formData,
+                        headers: { 'Accept': 'application/json' }
+                    });
+                    if (response.ok) {
+                        contactForm.reset();
+                        contactSuccess.classList.remove('hidden');
+                        contactError.classList.add('hidden');
+                    } else {
+                        contactError.classList.remove('hidden');
+                        contactSuccess.classList.add('hidden');
+                    }
+                } catch (e) {
+                    contactError.classList.remove('hidden');
+                    contactSuccess.classList.add('hidden');
+                }
+            });
+        }
+
         const phrases = [
             "Questões Trabalhistas.", "Questões Cíveis.", "Revisão de Aposentadoria.",
             "Benefícios Assistenciais.", "Resolução de divórcios.", "pensão alimentícia.",
@@ -458,7 +512,10 @@
         ];
         
         const typeWriterElement = document.getElementById('typewriter');
-        let phraseIndex = 0, charIndex = 0, isDeleting = false, typeSpeed = 80;
+        // O <span> já vem com a primeira frase escrita no HTML (bom pra SEO e pra
+        // quem visita sem JS). O efeito de digitação começa apagando essa frase
+        // e segue o ciclo normal a partir daí.
+        let phraseIndex = 0, charIndex = phrases[0].length, isDeleting = true, typeSpeed = 30;
 
         function typeEffect() {
             const currentPhrase = phrases[phraseIndex];
@@ -479,10 +536,15 @@
             setTimeout(typeEffect, typeSpeed);
         }
 
-        document.addEventListener('DOMContentLoaded', typeEffect);
+        // Espera um pouco antes de apagar, pra dar tempo de ler a frase estática do HTML.
+        document.addEventListener('DOMContentLoaded', () => setTimeout(typeEffect, 2500));
 
         const RSS_URL = 'https://www.conjur.com.br/rss.xml'; 
         const API_URL = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(RSS_URL)}`;
+
+        // Ícones alternados para quando o RSS não traz imagem própria da notícia —
+        // evita que as 3 notícias caiam todas na mesma foto de banco de imagens.
+        const fallbackIcons = ['scale', 'gavel', 'book-open'];
 
         async function fetchNews() {
             const container = document.getElementById('news-container');
@@ -492,12 +554,17 @@
                 if (data.status === 'ok') {
                     container.innerHTML = '';
                     data.items.slice(0, 3).forEach((item, index) => {
-                        let imageUrl = item.enclosure?.link || item.thumbnail || 'https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&q=80';
+                        const imageUrl = item.enclosure?.link || item.thumbnail || null;
                         const date = new Date(item.pubDate).toLocaleDateString('pt-BR', { day: 'numeric', month: 'long', year: 'numeric' });
+                        const media = imageUrl
+                            ? `<img src="${imageUrl}" alt="Notícia" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">`
+                            : `<div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-navy to-[#0f2242]">
+                                   <i data-lucide="${fallbackIcons[index % fallbackIcons.length]}" class="w-12 h-12 text-gold/60"></i>
+                               </div>`;
                         container.innerHTML += `
                             <article class="bg-white rounded-sm shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 border-b-4 border-gold group flex flex-col h-full transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="${index * 100}">
                                 <div class="h-48 bg-slate-200 overflow-hidden relative shrink-0">
-                                    <img src="${imageUrl}" alt="Notícia" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                                    ${media}
                                     <div class="absolute top-4 left-4 bg-navy/90 text-gold text-xs font-bold px-3 py-1 uppercase tracking-wider shadow-md backdrop-blur-sm">Direito</div>
                                 </div>
                                 <div class="p-6 flex flex-col flex-grow">
