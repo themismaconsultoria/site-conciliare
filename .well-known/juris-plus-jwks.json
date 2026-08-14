@@ -1,0 +1,12 @@
+{
+  "keys": [
+    {
+      "kty": "RSA",
+      "use": "sig",
+      "alg": "RS256",
+      "kid": "juris-plus-e980330cbf86a103",
+      "n": "xzhgdgcIwWrPVo6hUesbEi_cDUAlZ6gmJbmNMDsOQVFzx2iJjQlRFrmi5gVrGlyuN0GIHNu7LsVZm3zQCV96Aj5IKp3luM1zorMX8F_tVc4oyElCMIW3vlbBNDBTp2AQ7t-In6aDcjkEAON1VlJXCaUeaCEK_CxVIZoV4o9sRZoLM23UdKV9LEwC89rXaab7LKNq_Sx4G0n3dPVRfhyaZGvom6efy4ISa2zssiAIqvgB4J7-0rn_uQawnHLPAyqKBbnPuuF2SSg3T1csojs4QEp9GIww-pFFU7gNkE_RN1PN9kGmhKTWTOJ41KUikXUXciByvAsmq1nEuBuNknAxSUUwzvHgFcvIVkOYpXtk8Juu5bS7wC0rS9IS7g0o7tNt6aXhwguhXoJbH7GaBC6W8ogbjLPKz3GI-LCQUSBbQ3x6nQAJ3jvQWnNcJj8NO1du97EywpJhSSk92SwLTXH5k49Dq4H83V5ubAlhxOHQfKDY3OLQ6C6DNqx5PjTWtkoZ",
+      "e": "AQAB"
+    }
+  ]
+}
